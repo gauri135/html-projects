@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="icon" href="../icons/registration.ico" type="image/x-icon">
+</head>
+
+<body>
+    <form aria-labelledby="form-title">
+        <h1 id="form-title">Registration Form</h1>
+        <div>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required aria-required="true" aria-describedby="name-help">
+            <small id="name-help">Enter your full name.</small>
+        </div>
+        <br>
+        <div>
+            <label for="DOB">DOB:</label>
+            <input type="date" id="DOB" name="DOB" required aria-required="true">
+        </div>
+        <br>
+        <fieldset>
+            <legend>Gender:</legend>
+            <div>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label>
+            </div>
+            <div>
+                <input type="radio" id="female" name="gender" value="female" required>
+                <label for="female">Female</label>
+            </div>
+        </fieldset>
+        <br>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required aria-required="true" aria-describedby="email-help">
+            <small id="email-help">Enter a valid email address.</small>
+        </div>
+        <br>
+        <div>
+            <label for="state">State:</label>
+            <select id="state" name="state" required aria-required="true">
+                <option value="">Select option</option>
+                <option value="Maharashtra">Maharashtra</option>
+                <option value="Gujarat">Gujarat</option>
+                <option value="Tamil Nadu">Tamil Nadu</option>
+                <option value="Punjab">Punjab</option>
+                <option value="Telangana">Telangana</option>
+                <option value="Andhra Pradesh">Andhra Pradesh</option>
+                <option value="Haryana">Haryana</option>
+                <option value="Himachal Pradesh">Himachal Pradesh</option>
+                <option value="Odisha">Odisha</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required aria-required="true"
+                aria-describedby="password-help">
+            <small id="password-help">Password must be at least 8 characters long.</small>
+        </div>
+        <br>
+        <div>
+            <label for="confirm_password">Confirm Password:</label>
+            <input type="password" id="confirm_password" name="confirm_password" required aria-required="true"
+                aria-describedby="confirm-password-help">
+            <small id="confirm-password-help">Re-enter your password for confirmation.</small>
+        </div>
+        <br>
+        <div>
+            <label for="color">Which color is your favorite?</label>
+            <input type="color" id="color" name="color">
+        </div>
+        <br>
+        <div>
+            <label for="image">Upload your image:</label>
+            <input type="file" id="image" name="image" accept="image/*" aria-label="Upload your image">
+        </div>
+        <br>
+        <div>
+            <input type="reset" id="reset" value="Reset">
+            <input type="submit" value="Register">
+        </div>
+    </form>
+</body>
+
+</html>
